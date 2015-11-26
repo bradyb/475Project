@@ -6,10 +6,34 @@
 #include "ec_ops.h"
 using namespace std;
 
+// The Zp that is returned from this function is the
+// GCD of a and b
+Zp inverseHelper(Zp* x, Zp* y, Zp a, Zp b) {
+
+	if(a.getValue()=="0"){
+
+		*x = Zp(0);
+		*y = Zp(1);
+		return b;
+	}
+
+	Zp xPrime;
+	Zp 
+	Zp result = inverseHelper(&xPrime, &yPrime)
+
+
+	return result
+}
+
 Zp Zp::inverse() const{
 	// Implement the Extended Euclidean Algorithm to return the inverse mod PRIME		
 
 	assert(0);
+	int x;
+	int y;
+    // solving for x,y  so that x * value + y * PRIME = gcd(value, PRIME)
+    inverseHelper(&x, &y, a, b);
+	
 	return 0;
 }
 
